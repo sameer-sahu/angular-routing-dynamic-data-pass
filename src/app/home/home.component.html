@@ -1,0 +1,17 @@
+<p>home works!</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>ROLE</th>
+        <th>Action</th>
+    </tr>
+    <ng-container *ngFor="let user of users">
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.role }}</td>
+            <td>
+                <button (click) = "onClickEdit(user.id)">Edit</button>
+            </td>
+        </tr>
+    </ng-container>
+</table>
